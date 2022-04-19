@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/catlover_navigation"
+    app:startDestination="@id/catBreedFragment">
+
+    <fragment
+        android:id="@+id/catBreedFragment"
+        android:name="cl.uandes.catloversapp.view.catbreeds.CatBreedFragment"
+        android:label="Cat Breed"
+        tools:layout="@layout/fragment_cat_breed" >
+        <action
+            android:id="@+id/action_catBreedFragment_to_breedDetailsFragment"
+            app:destination="@id/breedDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myCatsFragment"
+        android:name="cl.uandes.catloversapp.view.mycats.MyCatsFragment"
+        android:label="My Cats"
+        tools:layout="@layout/fragment_my_cats" >
+        <action
+            android:id="@+id/action_myCatsFragment_to_addCatFragment"
+            app:destination="@id/addCatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCatFragment"
+        android:name="cl.uandes.catloversapp.view.mycats.AddCatFragment"
+        android:label="Add Cat"
+        tools:layout="@layout/fragment_add_cat">
+        <argument
+            android:name="userEmail"
+            app:argType="string"
+            android:defaultValue="user@example.com" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="cl.uandes.catloversapp.view.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/breedDetailsFragment"
+        android:name="cl.uandes.catloversapp.view.catbreeds.BreedDetailsFragment"
+        android:label="Cat Details"
+        tools:layout="@layout/fragment_breed_details">
+        <argument
+            android:name="breed"
+            app:argType="string"
+            android:defaultValue="Breed" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="cl.uandes.catloversapp.view.signin.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_catBreedFragment"
+            app:destination="@id/catBreedFragment" />
+    </fragment>
+</navigation>
