@@ -1,4 +1,4 @@
-package cl.uandes.catloversapp.view.profile
+package cl.uandes.catloversapp.ui.view.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

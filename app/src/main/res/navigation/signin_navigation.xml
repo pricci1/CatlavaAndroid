@@ -7,7 +7,20 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="cl.uandes.catloversapp.view.signin.LoginFragment"
+        android:name="cl.uandes.catloversapp.ui.view.signin.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="cl.uandes.catloversapp.ui.view.signin.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>

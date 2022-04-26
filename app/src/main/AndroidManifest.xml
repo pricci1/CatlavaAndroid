@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CatLoversApp">
         <activity
-            android:name=".view.CatLoverActivity"
+            android:name="cl.uandes.catloversapp.ui.view.CatLoverActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

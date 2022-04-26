@@ -2,4 +2,8 @@
     <string name="app_name">CatLoversApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="breeds">Breeds</string>
+    <string name="my_cats">My Cats</string>
+    <string name="profile">Profile</string>
+    <string name="invalid_email">Email inválido</string>
 </resources>

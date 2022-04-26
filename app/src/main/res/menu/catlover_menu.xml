@@ -2,16 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/catBreedFragment"
-        android:title="Breeds"
+        android:title="@string/breeds"
         android:icon="@drawable/ic_breed_list"/>
 
     <item
         android:id="@+id/myCatsFragment"
-        android:title="My Cats"
+        android:title="@string/my_cats"
         android:icon="@drawable/ic_cat" />
 
     <item
         android:id="@+id/profileFragment"
-        android:title="Profile"
+        android:title="@string/profile"
         android:icon="@drawable/ic_user" />
 </menu>

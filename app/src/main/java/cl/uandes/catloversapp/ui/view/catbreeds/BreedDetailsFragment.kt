@@ -1,11 +1,10 @@
-package cl.uandes.catloversapp.view.catbreeds
+package cl.uandes.catloversapp.ui.view.catbreeds
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import cl.uandes.catloversapp.R
 import cl.uandes.catloversapp.databinding.FragmentBreedDetailsBinding
 
 class BreedDetailsFragment : Fragment() {
@@ -21,4 +20,5 @@ class BreedDetailsFragment : Fragment() {
     _binding = FragmentBreedDetailsBinding.inflate(inflater, container, false)
     return binding.root
   }
+
 }
