@@ -1,4 +1,4 @@
-package cl.uandes.catloversapp.model
+package cl.uandes.catloversapp.data.model
 
 class Users {
   companion object {

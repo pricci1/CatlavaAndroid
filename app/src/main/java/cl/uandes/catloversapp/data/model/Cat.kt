@@ -1,4 +1,4 @@
-package cl.uandes.catloversapp.model
+package cl.uandes.catloversapp.data.model
 
 import java.time.format.DateTimeFormatter
 

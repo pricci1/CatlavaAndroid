@@ -10,7 +10,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import cl.uandes.catloversapp.R
 import cl.uandes.catloversapp.databinding.ActivityCatloverBinding
-import cl.uandes.catloversapp.model.Users
+import cl.uandes.catloversapp.data.model.Users
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 var isLoggedIn = false

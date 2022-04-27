@@ -12,7 +12,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import cl.uandes.catloversapp.R
 import cl.uandes.catloversapp.databinding.FragmentCatBreedsBinding
-import cl.uandes.catloversapp.model.CatBreed
+import cl.uandes.catloversapp.data.model.CatBreed
 import cl.uandes.catloversapp.ui.viewmodel.catbreeds.CatBreedViewModel
 
 class CatBreedsFragment : Fragment(), CatBreedAdapter.ActionListener {

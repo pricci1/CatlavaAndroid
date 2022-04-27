@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import cl.uandes.catloversapp.R
-import cl.uandes.catloversapp.model.CatBreed
+import cl.uandes.catloversapp.data.model.CatBreed
 import cl.uandes.catloversapp.ui.view.catbreeds.CatBreedAdapter.ViewHolder
 
 class CatBreedAdapter(
