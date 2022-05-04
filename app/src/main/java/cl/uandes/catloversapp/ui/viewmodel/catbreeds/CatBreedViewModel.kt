@@ -2,8 +2,8 @@ package cl.uandes.catloversapp.ui.viewmodel.catbreeds
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import cl.uandes.catloversapp.model.CatBreed
-import cl.uandes.catloversapp.model.CatBreeds
+import cl.uandes.catloversapp.data.model.CatBreed
+import cl.uandes.catloversapp.data.model.CatBreeds
 
 class CatBreedViewModel: ViewModel() {
 

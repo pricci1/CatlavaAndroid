@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import cl.uandes.catloversapp.R
 import cl.uandes.catloversapp.databinding.FragmentSignUpBinding
-import cl.uandes.catloversapp.model.User
+import cl.uandes.catloversapp.data.model.User
 import cl.uandes.catloversapp.ui.view.users
 
 class SignUpFragment : Fragment() {
