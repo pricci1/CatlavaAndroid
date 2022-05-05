@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import cl.uandes.catloversapp.R
 import cl.uandes.catloversapp.data.model.CatBreed
 import cl.uandes.catloversapp.ui.view.catbreeds.CatBreedAdapter.ViewHolder
+import com.bumptech.glide.Glide
 
 class CatBreedAdapter(
   private val breedList: MutableList<CatBreed>,
@@ -34,11 +35,13 @@ class CatBreedAdapter(
       currentBreed = catBreed
 
       breedName.text = currentBreed!!.name
-      if (currentBreed?.image != null) {
-        breedImage.setImageResource(catBreed.image!!)
+
+      if (currentBreed!!.image?.url != null) {
+        Glide.with(itemView).load(currentBreed!!.image?.url).into(breedImage)
       } else {
         breedImage.setImageResource(R.drawable.ic_cat)
       }
+
     }
   }
 
