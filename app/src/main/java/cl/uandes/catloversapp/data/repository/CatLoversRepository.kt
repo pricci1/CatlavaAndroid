@@ -1,13 +1,16 @@
 package cl.uandes.catloversapp.data.repository
 
 import androidx.lifecycle.LiveData
-import cl.uandes.catloversapp.data.dao.UserDao
+import cl.uandes.catloversapp.data.api.CatApi
 import cl.uandes.catloversapp.data.datasources.CatLoversDataSource
+import cl.uandes.catloversapp.data.model.CatBreed
 import cl.uandes.catloversapp.data.model.User
 
 class CatLoversRepository (
-    private val localDataSource: CatLoversDataSource
-  ): UserRepository {
+    private val localDataSource: CatLoversDataSource,
+    private val remoteDataSource: CatApi? = null
+  ): UserRepository, CatRepository {
+
   override suspend fun createUser(user: User) {
     localDataSource.createUser(user)
   }
@@ -22,5 +25,13 @@ class CatLoversRepository (
 
   override fun getAllUsers(): LiveData<List<User>> {
     return localDataSource.getAllUsers()
+  }
+
+  override suspend fun getCatBreeds(): List<CatBreed> {
+    remoteDataSource?.getCatBreeds().also {
+      if(it?.isSuccessful == true) return it.body() ?: emptyList()
+    }
+
+    return emptyList()
   }
 }
