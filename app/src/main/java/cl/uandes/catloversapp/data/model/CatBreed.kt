@@ -1,11 +1,19 @@
 package cl.uandes.catloversapp.data.model
 
-import androidx.annotation.DrawableRes
+import com.google.gson.annotations.SerializedName
 
 data class CatBreed (
+  @SerializedName("name")
   val name: String,
-  @DrawableRes
-  val image: Int?,
-  val description: String,
-  val colors: String,
+  @SerializedName("image")
+  val image: CatImage?,
+  @SerializedName("temperament")
+  val temperament: String,
+  @SerializedName("alt_names")
+  val alternativeNames: String,
+)
+
+data class CatImage (
+  @SerializedName("url")
+  val url: String?
 )
