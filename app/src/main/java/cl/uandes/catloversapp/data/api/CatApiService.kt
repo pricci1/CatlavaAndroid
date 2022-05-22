@@ -1,6 +1,5 @@
 package cl.uandes.catloversapp.data.api
 
-import cl.uandes.catloversapp.data.model.CatBreed
 import okhttp3.OkHttpClient
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -27,5 +26,5 @@ class CatApiService(
     .build()
     .create(CatApi::class.java)
 
-  override suspend fun getCatBreeds(): Response<List<CatBreed>> = api.getCatBreeds()
+  override suspend fun getCatBreeds(): Response<List<CatBreedDto>> = api.getCatBreeds()
 }
