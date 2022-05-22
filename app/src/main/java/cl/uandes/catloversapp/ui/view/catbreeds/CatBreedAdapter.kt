@@ -36,8 +36,8 @@ class CatBreedAdapter(
 
       breedName.text = currentBreed!!.name
 
-      if (currentBreed!!.image?.url != null) {
-        Glide.with(itemView).load(currentBreed!!.image?.url).into(breedImage)
+      if (currentBreed!!.imageUrl != null) {
+        Glide.with(itemView).load(currentBreed!!.imageUrl).into(breedImage)
       } else {
         breedImage.setImageResource(R.drawable.ic_cat)
       }

@@ -7,7 +7,7 @@ import retrofit2.Response
 
 interface CatApi {
   @GET("v1/breeds")
-  suspend fun getCatBreeds(): Response<List<CatBreed>>
+  suspend fun getCatBreeds(): Response<List<CatBreedDto>>
 
   // Si quieren mandar un parametro al path
   // @GET("breeds/{breed_id}")

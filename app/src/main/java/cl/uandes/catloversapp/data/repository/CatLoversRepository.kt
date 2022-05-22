@@ -29,7 +29,12 @@ class CatLoversRepository (
 
   override suspend fun getCatBreeds(): List<CatBreed> {
     remoteDataSource?.getCatBreeds().also {
-      if(it?.isSuccessful == true) return it.body() ?: emptyList()
+      if(it?.isSuccessful == true) {
+        val breeds = it.body() ?: emptyList()
+        return breeds.map { breed ->
+          breed.toModel()
+        }
+      }
     }
 
     return emptyList()
